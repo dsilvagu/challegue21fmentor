@@ -1,0 +1,9 @@
+---
+const {class: className} = Astro.props;
+import '@fontsource/poppins/700.css';
+import '@fontsource-variable/open-sans';
+---
+
+<section class={` ${className} w-full scroll-m-20 relative `}>
+    <slot />
+</section>

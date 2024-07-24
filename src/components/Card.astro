@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string;
+    text: string;
+    img: string;
+    styles:string
+}
+const {styles, title, text, img} = Astro.props;
+---
+
+<div class="lg:max-w-7xl px-4 mx-auto py-20 flex flex-col gap-20" class:list={styles}>
+    <img class="lg:w-1/2" src={img} alt="">
+    <div class="lg:w-1/2 text-center lg:text-left flex flex-col gap-4 lg:justify-center text-pretty">
+        <p class="text-3xl font-poppins capitalize">{title}</p>
+        <p class=" text-lg font-opensans text-balance">{text}</p>
+    </div>
+</div>

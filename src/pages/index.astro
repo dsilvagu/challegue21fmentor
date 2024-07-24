@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import SemiHero from '../components/SemiHero.astro';
+import img1 from '../images/bg-section-top-desktop-1.svg';
+import img2 from '../images/bg-section-bottom-desktop-1.svg';
+import img3 from '../images/bg-section-top-desktop-2.svg';
+import img4 from '../images/bg-section-bottom-desktop-2.svg';
+import Card from '../components/Card.astro';
+import img5 from '../images/illustration-grow-together.svg';
+import img6 from '../images/illustration-flowing-conversation.svg';
+import img7 from '../images/illustration-your-users.svg';
+import Message from '../components/Message.astro';
+import img8 from '../images/bg-footer-top-desktop.svg';
+---
+
+<Layout title='FMentor'>
+	<main>
+		<SectionContainer>
+			<Hero />
+		</SectionContainer>
+
+		<SectionContainer>
+			<SemiHero />
+		</SectionContainer>
+
+		<SectionContainer>
+			<img class="w-full" src={img1.src} alt="">
+		</SectionContainer>
+
+		<SectionContainer class="bg-pvpblue">
+			<Card title='grow together' text='Generate meaningful discussiones with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.' img={img5.src} styles='lg:flex-row-reverse' />
+		</SectionContainer>
+
+		<SectionContainer>
+			<img class="w-full" src={img2.src} alt="">
+		</SectionContainer>
+
+		<SectionContainer>
+			<Card title='flowing conversations' text='You wouldn`t paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.' img={img6.src} styles='lg:flex-row py-32' />
+		</SectionContainer>
+
+
+		<SectionContainer>
+			<img class="w-full" src={img3.src} alt="">
+		</SectionContainer>
+
+		<SectionContainer class="bg-pvpblue">
+			<Card title='your users' text='It takes no time at all to integrate Huddle with your app`s authentication solution. This means, once signed in to your app, your users can start chatting inmediately.' img={img7.src} styles='lg:flex-row-reverse' />
+		</SectionContainer>
+
+		<SectionContainer>
+			<img class="w-full" src={img4.src} alt="">
+		</SectionContainer>
+
+		<SectionContainer>
+			<Message />
+		</SectionContainer>
+
+		<SectionContainer>
+			<img class="w-full object-fill" src={img8.src} alt="">
+		</SectionContainer>
+	</main>
+</Layout>
